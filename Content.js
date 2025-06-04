@@ -10,7 +10,7 @@ function replaceImages() {
 // Run once on load
 replaceImages();
 
-// Re-run anytime the DOM changes
+// Re-run anytime the DOM changes, w like a scroll or a refresh
 const observer = new MutationObserver(replaceImages);
 observer.observe(document.body, {
   childList: true,
